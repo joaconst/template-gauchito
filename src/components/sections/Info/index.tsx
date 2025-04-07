@@ -4,7 +4,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { CreditCard, Truck, ShieldCheck } from 'lucide-react';
 
 const Info = () => {
-  const sliderRef = useRef(null);
+  const sliderRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const cards = [
@@ -28,7 +28,6 @@ const Info = () => {
     },
   ];
 
-  // Calcula cuál es la tarjeta que está en el centro del contenedor
   const handleScroll = () => {
     if (sliderRef.current) {
       const container = sliderRef.current;
@@ -38,7 +37,8 @@ const Info = () => {
       let minDistance = Infinity;
 
       Array.from(container.children).forEach((child, index) => {
-        const childRect = child.getBoundingClientRect();
+        const childElement = child as HTMLElement;
+        const childRect = childElement.getBoundingClientRect();
         const childCenter = childRect.left + childRect.width / 2;
         const distance = Math.abs(containerCenter - childCenter);
         if (distance < minDistance) {
@@ -79,12 +79,13 @@ const Info = () => {
             </div>
           ))}
         </div>
-        {/* Indicadores con puntos */}
+
+        {/* Indicadores con puntos (solo en mobile) */}
         <div className="md:hidden flex justify-center mt-4 gap-2">
           {cards.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full ${
+              className={`w-3 h-3 rounded-full transition-colors duration-300 ${
                 activeIndex === index ? 'bg-primary' : 'bg-gray-400'
               }`}
             />
