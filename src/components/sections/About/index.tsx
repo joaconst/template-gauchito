@@ -22,7 +22,7 @@ const About = () => {
                     {/* Imagen */}
                     <div className='relative w-full h-full overflow-hidden rounded-4xl md:ml-8 mb-4 md:mb-0'>
                         <Image
-                            src="/about/about.webp"
+                            src="/sections/about/about.webp"
                             alt="About"
                             fill
                             className='object-cover object-center'

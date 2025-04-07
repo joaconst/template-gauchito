@@ -13,7 +13,7 @@ const Buttons = () => {
             <div className="relative w-24 h-24 md:w-44 md:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
-                  src="/buttons/button-1.webp"
+                  src="/sections/buttons/button-1.webp"
                   alt="Mates"
                   width={150}
                   height={150}
@@ -32,7 +32,7 @@ const Buttons = () => {
             <div className="relative w-24 h-24 md:w-44 md:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
-                  src="/buttons/button-2.webp"
+                  src="/sections/buttons/button-2.webp"
                   alt="Cuencos"
                   width={150}
                   height={150}
@@ -51,7 +51,7 @@ const Buttons = () => {
             <div className="relative w-24 h-24 md:w-44 md:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
-                  src="/buttons/button-3.webp"
+                  src="/sections/buttons/button-3.webp"
                   alt="Tablas"
                   width={150}
                   height={150}
@@ -70,7 +70,7 @@ const Buttons = () => {
             <div className="relative w-24 h-24 md:w-44 md:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
-                  src="/buttons/button-4.webp"
+                  src="/sections/buttons/button-4.webp"
                   alt="Platos"
                   width={150}
                   height={150}

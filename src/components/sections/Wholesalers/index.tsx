@@ -15,7 +15,7 @@ const Wholesalers = () => {
               className="border-4 rounded-4xl"
               width={400}
               height={200}
-              src="/wholesalers/wholesalers-1.webp"
+              src="/sections/wholesalers/wholesalers-1.webp"
             />
             <h2 className="text-3xl font-bold mt-4">Combos emprendedores</h2>
             <p className="text-center mt-2 text-xl">
@@ -40,7 +40,7 @@ const Wholesalers = () => {
               className="mt-4 rounded-4xl"
               width={400}
               height={200}
-              src="/wholesalers/wholesalers-2.webp"
+              src="/sections/wholesalers/wholesalers-2.webp"
             />
           </div>
         </div>

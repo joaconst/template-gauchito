@@ -10,7 +10,7 @@ const Hero = () => {
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero.webp"
+          src="/sections/hero/hero.webp"
           alt="Productos artesanales"
           fill
           className="object-cover"
@@ -52,7 +52,7 @@ const Hero = () => {
               <div className="flex flex-col justify-between space-y-8 mr-4 sm:ml-4 md:ml-8">
                 <div className="relative w-44 sm:w-64 md:w-72 h-40 sm:h-52">
                   <Image
-                    src="/hero/hero-item-1.webp"
+                    src="/sections/hero/hero-item-1.webp"
                     alt="Mate artesanal"
                     fill
                     className="object-cover rounded-4xl shadow-xl"
@@ -60,7 +60,7 @@ const Hero = () => {
                 </div>
                 <div className="relative w-44 sm:w-64 md:w-72 h-40 sm:h-52">
                   <Image
-                    src="/hero/hero-item-2.webp"
+                    src="/sections/hero/hero-item-2.webp"
                     alt="Cuencos artesanales"
                     fill
                     className="object-cover rounded-4xl shadow-xl"
@@ -71,7 +71,7 @@ const Hero = () => {
               {/* Imagen 3 centrada verticalmente a la derecha */}
               <div className="relative w-44 sm:w-64 md:w-72 h-40 sm:h-52 self-center ml-2 sm:mr-4 md:mr-8">
                 <Image
-                  src="/hero/hero-item-3.webp"
+                  src="/sections/hero/hero-item-3.webp"
                   alt="Tablas artesanales"
                   fill
                   className="object-cover rounded-4xl shadow-xl"
@@ -84,7 +84,7 @@ const Hero = () => {
           <div className="relative hidden lg:block h-[400px] md:h-[500px]">
             <div className="absolute top-5 md:top-10 left-20 md:left-5 xl:left-30 w-32 md:w-48 h-40 md:h-50 transform -translate-x-4">
               <Image
-                src="/hero/hero-item-1.webp"
+                src="/sections/hero/hero-item-1.webp"
                 alt="Mate artesanal"
                 fill
                 className="object-cover rounded-4xl shadow-xl"
@@ -93,7 +93,7 @@ const Hero = () => {
 
             <div className="absolute top-0 md:top-0 right-12 md:right-0 xl:right-30 w-40 md:w-64 h-40 md:h-64 transform translate-x-4">
               <Image
-                src="/hero/hero-item-2.webp"
+                src="/sections/hero/hero-item-2.webp"
                 alt="Cuencos artesanales"
                 fill
                 className="object-cover rounded-4xl shadow-xl"
@@ -102,7 +102,7 @@ const Hero = () => {
 
             <div className="absolute bottom-0 left-40 md:left-60 xl:left-80 w-40 md:w-64 h-36 md:h-56 transform -translate-x-1/2">
               <Image
-                src="/hero/hero-item-3.webp"
+                src="/sections/hero/hero-item-3.webp"
                 alt="Tablas artesanales"
                 fill
                 className="object-cover rounded-4xl shadow-xl"

@@ -9,7 +9,7 @@ const Combo = () => {
                 <div className='w-1/2 h-full flex items-center justify-center p-2'>
                     <div className='relative w-full h-full rounded-3xl overflow-hidden'>
                         <Image
-                            src='/combos/combos-1.webp'
+                            src='/sections/combos/combos-1.webp'
                             alt='Combo 1'
                             fill
                             className='object-cover object-center'
@@ -35,7 +35,7 @@ const Combo = () => {
                 <div className='w-1/2 h-full flex items-center justify-center p-2'>
                     <div className='relative w-full h-full rounded-3xl overflow-hidden'>
                         <Image
-                            src='/combos/combos-2.webp'
+                            src='/sections/combos/combos-2.webp'
                             alt='Combo 2'
                             fill
                             className='object-cover object-center'
