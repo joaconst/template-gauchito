@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const About = () => {
     return (
-        <section className='relative h-screen flex flex-col items-center justify-center overflow-hidden'>
+        <section id='nosotros' className='relative h-screen flex flex-col items-center justify-center overflow-hidden'>
             {/* Fondo con círculo estirado */}
             <div className="hidden md:block absolute inset-0 -z-10">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[275%] h-[130%] bg-white rounded-[75%] transform scale-x-[0.4] origin-center" />
@@ -46,7 +46,7 @@ const About = () => {
 
             {/* Botón de Comprar Ahora */}
             <Link
-                href="/tienda"
+                href="/productos"
                 className="z-20 mt-4 md:mt-8 bg-secondary hover:bg-secondary/80 text-white font-bold py-3 md:py-4 px-8 md:px-12 rounded-full text-xl md:text-3xl shadow-[4px_4px_0px_#000]"
             >
                 Comprar Ahora

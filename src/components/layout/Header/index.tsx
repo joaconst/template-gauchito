@@ -26,7 +26,7 @@ const Header = () => {
               Productos
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out" />
             </Link>
-            <Link href="/nosotros" className="relative hover:text-primary group">
+            <Link href="/#nosotros" className="relative hover:text-primary group">
               Nosotros
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out" />
             </Link>

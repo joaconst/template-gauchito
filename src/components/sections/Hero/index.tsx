@@ -39,7 +39,7 @@ const Hero = () => {
                 <ArrowRight size={20} />
               </Link>
               <Link
-                href="/nosotros"
+                href="#"
                 className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg flex items-center justify-center transition-colors"
               >
                 Conócenos
