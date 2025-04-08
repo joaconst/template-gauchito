@@ -7,7 +7,7 @@ const Buttons = () => {
   return (
     <section className="relative py-12">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-center gap-8 md:gap-12">
+        <div className="grid grid-cols-2 gap-6 lg:flex lg:flex-wrap lg:justify-center lg:gap-12">
           {/* Botón 1 - Mates */}
           <Link href="#" className="group flex flex-col items-center">
             <div className="relative w-24 h-24 md:w-44 md:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
