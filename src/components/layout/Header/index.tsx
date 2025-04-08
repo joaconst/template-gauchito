@@ -18,17 +18,24 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {['Inicio', 'Productos', 'Nosotros', 'Contacto'].map((item) => (
-              <Link
-                key={item}
-                href={`/${item.toLowerCase()}`}
-                className="relative hover:text-primary group"
-              >
-                {item}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out" />
-              </Link>
-            ))}
+            <Link href="/" className="relative hover:text-primary group">
+              Inicio
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out" />
+            </Link>
+            <Link href="/productos" className="relative hover:text-primary group">
+              Productos
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out" />
+            </Link>
+            <Link href="/nosotros" className="relative hover:text-primary group">
+              Nosotros
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out" />
+            </Link>
+            <Link href="/contacto" className="relative hover:text-primary group">
+              Contacto
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out" />
+            </Link>
           </nav>
+
 
           {/* Right Side Icons */}
           <div className="flex items-center space-x-4">
@@ -61,9 +68,8 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
-          }`}
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
+            }`}
         >
           <nav className="flex flex-col space-y-4 py-4">
             {['Inicio', 'Productos', 'Nosotros', 'Contacto'].map((item) => (
