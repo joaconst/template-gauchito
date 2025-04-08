@@ -48,8 +48,8 @@ const Wholesalers = () => {
 
       {/* Sección de Envíos */}
       <div className="bg-primary text-white text-center py-4 mt-4 flex items-center justify-center gap-2">
-        <Truck size={40} />
-        <p className='text-2xl font-bold'>ENVIOS MAYORISTAS A TODO EL PAÍS</p>
+        <Truck className='w-8 h-8 md:w-10 md:h-10'/>
+        <p className='text-xl md:text-2xl font-bold'>ENVIOS MAYORISTAS A TODO EL PAÍS</p>
       </div>
     </div>
   );

@@ -9,78 +9,81 @@ const Info = () => {
 
   const cards = [
     {
-      icon: <CreditCard className="w-10 h-10 text-primary" />,
+      icon: <CreditCard className="w-8 h-8 md:w-10 md:h-10 text-primary" />,
       title: 'Tarjetas bancarizadas',
       description: 'Múltiples métodos de pago',
-      extraClasses: 'md:pr-12 md:border-r',
     },
     {
-      icon: <Truck className="w-10 h-10 text-primary" />,
+      icon: <Truck className="w-8 h-8 md:w-10 md:h-10 text-primary" />,
       title: 'Envíos a todo el país',
       description: 'Rastreo en tiempo real',
-      extraClasses: 'md:px-12 md:border-r',
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 text-primary" />,
+      icon: <ShieldCheck className="w-8 h-8 md:w-10 md:h-10 text-primary" />,
       title: 'Sitio seguro',
       description: 'Protegemos tus datos',
-      extraClasses: 'md:pt-0',
     },
   ];
 
   const handleScroll = () => {
-    if (sliderRef.current) {
-      const container = sliderRef.current;
-      const containerRect = container.getBoundingClientRect();
-      const containerCenter = containerRect.left + containerRect.width / 2;
-      let closestIndex = 0;
-      let minDistance = Infinity;
+    if (!sliderRef.current) return;
+    const container = sliderRef.current;
+    const containerRect = container.getBoundingClientRect();
+    const containerCenter = containerRect.left + containerRect.width / 2;
 
-      Array.from(container.children).forEach((child, index) => {
-        const childElement = child as HTMLElement;
-        const childRect = childElement.getBoundingClientRect();
-        const childCenter = childRect.left + childRect.width / 2;
-        const distance = Math.abs(containerCenter - childCenter);
-        if (distance < minDistance) {
-          minDistance = distance;
-          closestIndex = index;
-        }
-      });
-      setActiveIndex(closestIndex);
-    }
+    let closestIndex = 0;
+    let minDistance = Infinity;
+
+    Array.from(container.children).forEach((child, index) => {
+      const childElement = child as HTMLElement;
+      const childRect = childElement.getBoundingClientRect();
+      const childCenter = childRect.left + childRect.width / 2;
+      const distance = Math.abs(containerCenter - childCenter);
+
+      if (distance < minDistance) {
+        minDistance = distance;
+        closestIndex = index;
+      }
+    });
+
+    setActiveIndex(closestIndex);
   };
 
   useEffect(() => {
     const slider = sliderRef.current;
-    if (slider) {
-      slider.addEventListener('scroll', handleScroll);
-      return () => slider.removeEventListener('scroll', handleScroll);
-    }
+    if (!slider) return;
+
+    slider.addEventListener('scroll', handleScroll, { passive: true });
+    return () => slider.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div className="bg-gray-50 py-8 md:py-12 mt-8">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Slider en mobile y layout normal en desktop */}
         <div
           ref={sliderRef}
-          className="flex gap-4 md:gap-12 overflow-x-auto snap-x snap-mandatory md:overflow-visible hidden-scrollbar"
+          className="flex md:grid md:grid-cols-3 gap-4 lg:gap-8 xl:gap-12
+            overflow-x-auto scroll-smooth snap-x snap-mandatory
+            md:overflow-visible hidden-scrollbar md:divide-x divide-primary/50"
         >
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`flex items-center gap-4 hover:opacity-80 transition-opacity pb-4 md:pb-0 ${card.extraClasses} border-primary/50 last:border-0 flex-shrink-0 w-[80%] md:w-auto snap-center`}
+              className="flex flex-shrink-0 items-center gap-3 lg:gap-4 
+                min-w-[80%] sm:min-w-[60%] md:min-w-0 w-auto max-w-md
+                hover:opacity-80 transition-opacity pb-4 md:pb-0 
+                snap-center px-2 md:px-0"
             >
               {card.icon}
               <div>
-                <h3 className="font-semibold text-xl">{card.title}</h3>
-                <p className="text-gray-600 text-lg">{card.description}</p>
+                <h3 className="font-semibold text-lg md:text-lg lg:text-xl">{card.title}</h3>
+                <p className="text-gray-600 text-base lg:text-lg">{card.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Indicadores con puntos (solo en mobile) */}
+        {/* Indicadores para mobile */}
         <div className="md:hidden flex justify-center mt-4 gap-2">
           {cards.map((_, index) => (
             <div
