@@ -1,7 +1,6 @@
 'use client';
 
 import { useRef } from 'react';
-import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -9,20 +8,20 @@ import 'swiper/css/navigation';
 
 import { ArrowBigLeft, ArrowBigRight } from 'lucide-react';
 
-const Mates = () => {
+const Regalos = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
     const cards = [
-        { title: "Mates Vírgenes", img: "products/mates/mate-1.webp", alt: "Mate artesanal 1", href: "/productos/1" },
-        { title: "Mates Lijados y Barnizados", img: "products/mates/mate-2.webp", alt: "Mate artesanal 2", href: "/productos/2" },
-        { title: "Mates Pintados", img: "products/mates/mate-3.webp", alt: "Mate artesanal 3", href: "/productos/3" },
-        { title: "Mates Grabados", img: "products/mates/mate-4.webp", alt: "Mate artesanal 4", href: "/productos/4" },
+        { title: "Box 1", img: "products/regalos/box-1.webp", alt: "Box artesanal 1" },
+        { title: "Box 2", img: "products/regalos/box-2.webp", alt: "Box artesanal 2" },
+        { title: "Box 3", img: "products/regalos/box-3.webp", alt: "Box artesanal 3" },
+        { title: "Box 4", img: "products/regalos/box-4.webp", alt: "Box artesanal 4" },
     ];
 
     return (
-        <section className="bg-secondary py-6">
-            <h2 className="text-3xl font-bold text-center mb-4 mt-4">Promociones para picadas</h2>
+        <section className="bg-tertiary py-6 mt-16">
+            <h2 className="text-3xl font-bold text-center mb-4 mt-4">Combos para regalos</h2>
 
             <div className="container mx-auto px-8 lg:px-0 h-auto relative">
                 {/* Botones personalizados */}
@@ -62,18 +61,16 @@ const Mates = () => {
                 >
                     {cards.map((card, index) => (
                         <SwiperSlide key={index} className="p-4">
-                            <Link href={card.href || '#'}>
-                                <div className="bg-secondary-foreground h-[60vh] rounded-2xl shadow-[2px_2px_0px_black] hover:scale-105 hover:shadow-none hover:ring-2 hover:ring-black transition-all duration-300">
-                                    <img
-                                        src={card.img}
-                                        alt={card.alt}
-                                        className="w-full h-68 object-cover p-2 rounded-2xl"
-                                    />
-                                    <div className="p-4">
-                                        <h3 className="text-2xl font-semibold text-center border-t pt-4">{card.title}</h3>
-                                    </div>
+                            <div className="bg-tertiary-foreground h-[60vh] rounded-2xl shadow-[2px_2px_0px_black] hover:scale-105 hover:shadow-none hover:ring-2 hover:ring-black transition-all duration-300">
+                                <img
+                                    src={card.img}
+                                    alt={card.alt}
+                                    className="w-full h-68 object-cover p-2 rounded-2xl"
+                                />
+                                <div className="p-4">
+                                    <h3 className="text-2xl font-semibold text-center border-t pt-4">{card.title}</h3>
                                 </div>
-                            </Link>
+                            </div>
                         </SwiperSlide>
                     ))}
                 </Swiper>
@@ -82,4 +79,4 @@ const Mates = () => {
     );
 };
 
-export default Mates;
+export default Regalos;

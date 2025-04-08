@@ -5,7 +5,7 @@ import { Facebook, Instagram, Mail, Phone, Map, Clock } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary py-8 rounded-t-4xl mt-8">
+    <footer className="bg-primary py-8 rounded-t-4xl mt-16">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:justify-items-center">
           <div className="col-span-1">
