@@ -3,9 +3,7 @@
 import { useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import { Navigation } from 'swiper/modules';
+
 
 interface Producto {
     nombre: string;
