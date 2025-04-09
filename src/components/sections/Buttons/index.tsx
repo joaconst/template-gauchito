@@ -10,7 +10,7 @@ const Buttons = () => {
         <div className="grid grid-cols-2 gap-6 lg:flex lg:flex-wrap lg:justify-center lg:gap-12">
           {/* Botón 1 - Mates */}
           <Link href="#" className="group flex flex-col items-center">
-            <div className="relative w-24 h-24 md:w-44 md:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
+            <div className="relative w-24 h-24 sm:w-44 sm:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
                   src="/sections/buttons/button-1.webp"
@@ -29,7 +29,7 @@ const Buttons = () => {
 
           {/* Botón 2 - Cuencos */}
           <Link href="#" className="group flex flex-col items-center">
-            <div className="relative w-24 h-24 md:w-44 md:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
+            <div className="relative w-24 h-24 sm:w-44 sm:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
                   src="/sections/buttons/button-2.webp"
@@ -48,7 +48,7 @@ const Buttons = () => {
 
           {/* Botón 3 - Tablas */}
           <Link href="#" className="group flex flex-col items-center">
-            <div className="relative w-24 h-24 md:w-44 md:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
+            <div className="relative w-24 h-24 sm:w-44 sm:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
                   src="/sections/buttons/button-3.webp"
@@ -67,7 +67,7 @@ const Buttons = () => {
 
           {/* Botón 4 - Platos */}
           <Link href="#" className="group flex flex-col items-center">
-            <div className="relative w-24 h-24 md:w-44 md:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
+            <div className="relative w-24 h-24 sm:w-44 sm:h-44 shadow-[2px_3px_0px_#000] rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
                   src="/sections/buttons/button-4.webp"

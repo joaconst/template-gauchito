@@ -75,7 +75,6 @@ const Cuencos = () => {
             <style>
                 {`
                     .custom-swiper .swiper-wrapper {
-                        justify-content: center;
                         margin-left: auto;
                         margin-right: auto;
                     }

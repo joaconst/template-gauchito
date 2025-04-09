@@ -22,7 +22,7 @@ const Hero = () => {
       {/* Contenido del Hero */}
       <div className="container mx-auto px-4 relative z-10 py-8 lg:py-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Texto y botones */}
+          {/* Texto + imágenes y botones mobile */}
           <div className="max-w-3xl text-white">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Más que un Mate, un Compañero de Historias
@@ -30,7 +30,9 @@ const Hero = () => {
             <p className="text-xl md:text-2xl mb-8">
               Nuestros mates, cuencos, tablas y platos de caldén son piezas artesanales únicas. Ideales para quienes buscan productos resistentes y con diseño exclusivo.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+
+            {/* Botones solo en desktop */}
+            <div className="hidden sm:flex flex-col sm:flex-row gap-4">
               <Link
                 href="/productos"
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg flex items-center justify-center gap-2 transition-colors"
@@ -46,7 +48,7 @@ const Hero = () => {
               </Link>
             </div>
 
-            {/* Imágenes para móvil - Orden: 1 y 2 en la izquierda, 3 a la derecha */}
+            {/* Imágenes para mobile */}
             <div className="lg:hidden flex justify-between mt-8">
               {/* Columna izquierda: Imagen 1 y 2 */}
               <div className="flex flex-col justify-between space-y-8 mr-4 sm:ml-4 md:ml-8">
@@ -77,6 +79,23 @@ const Hero = () => {
                   className="object-cover rounded-4xl shadow-xl"
                 />
               </div>
+            </div>
+
+            {/* Botones para mobile debajo de las imágenes */}
+            <div className="flex sm:hidden flex-col gap-4 mt-6">
+              <Link
+                href="/productos"
+                className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg flex items-center justify-center gap-2 transition-colors"
+              >
+                Ver Productos
+                <ArrowRight size={20} />
+              </Link>
+              <Link
+                href="#"
+                className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg flex items-center justify-center transition-colors"
+              >
+                Conócenos
+              </Link>
             </div>
           </div>
 

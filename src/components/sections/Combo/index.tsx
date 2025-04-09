@@ -24,7 +24,7 @@ const Combo = () => {
                 {/* Texto */}
                 <div className='w-1/2 flex items-center justify-center p-4 text-white'>
                     <h3 className='text-xl md:text-2xl font-bold text-center uppercase'>
-                        Combos para picada
+                        Combos para picadas
                     </h3>
                 </div>
             </article>
@@ -50,7 +50,7 @@ const Combo = () => {
                 {/* Texto */}
                 <div className='w-1/2 flex items-center justify-center p-4 text-white'>
                     <h3 className='text-xl md:text-2xl font-bold text-center uppercase'>
-                        Combos para picada
+                        Combos para regalos
                     </h3>
                 </div>
             </article>

@@ -25,7 +25,7 @@ const About = () => {
                             src="/sections/about/about.webp"
                             alt="About"
                             fill
-                            className='object-cover object-center'
+                            className='object-cover object-bottom sm:object-[center_-360px] md:object-center'
                         />
                     </div>
                     
