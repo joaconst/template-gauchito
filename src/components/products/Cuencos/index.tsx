@@ -23,14 +23,14 @@ const Cuencos = () => {
             <div className="container mx-auto px-8 lg:px-0 h-auto relative">
                 <button
                     ref={prevRef}
-                    className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-primary p-2 rounded-full shadow hover:bg-primary/90 transition"
+                    className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-primary p-2 rounded-full border shadow hover:bg-primary/90 transition"
                 >
                     <ArrowBigLeft className="text-white w-6 h-6" />
                 </button>
 
                 <button
                     ref={nextRef}
-                    className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-primary p-2 rounded-full shadow hover:bg-primary/90 transition"
+                    className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-primary p-2 rounded-full border shadow hover:bg-primary/90 transition"
                 >
                     <ArrowBigRight className="text-white w-6 h-6" />
                 </button>
